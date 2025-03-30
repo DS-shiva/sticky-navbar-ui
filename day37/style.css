@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+}
+nav{
+    
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0px;
+    z-index: 1000; 
+    
+
+    
+    
+}
+
+
+
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+
+ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.parentdiv{
+    background-color: green;
+    height: 500px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 15px 50px 30px 5px;
+}
+
+.firstdiv{
+    background-color: pink;
+    height: 450px;
+    position: absolute;
+    left: 190px;
+    border-radius: 15px 50px;
+
+    
+}
+.seconddiv{
+    background-color: blue;
+    position: absolute;
+    right: 190px;
+    border-radius: 15px 50px;
+}
+
+div .span{
+    display: inline-block;
+    height: 450px;
+    margin: 10px;
+    width: 250px;
+    position: absolute;
+    top: 16px;
+}
+.paradiv{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 25px;
+    
+    width: 300px;
+    margin-left: 500px;
+     
+
+}
+pre{
+    text-align: center;
+    padding-top: 4px;
+    padding-right: 55px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(28, 22, 22)
+}
+::selection{
+    color: aqua;
+    background-color: black;
+}
+
+/* .imgclass{
+    position: relative;
+} */
+/* img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: fixed;
+    right: 5px;
+    top: 15px;
+} */
+
+/* .imgclass{
+    position: absolute;
+    bottom: 10px;
+} */
+img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    /* position: absolute;
+    right: 10px; */
+    position: fixed; /* Changed from absolute to fixed */
+    bottom: 10px; /* Ensure it's at the bottom */
+    right: 10px;
+    border: 2px solid rgb(222, 5, 5);
+    
+}
+
+
+
+  
+
+footer{
+    margin-top: 150px;
+    text-align: center;
+    background-color: rgb(11, 34, 83);
+    height: 50px;
+
+}
+
+footer p{
+    padding-top: 10px;
+}
+
+.no-drag {
+    -webkit-user-drag: none; /* Works in Chrome, Safari, and Edge */
+    pointer-events: none; /* Prevents interactions like opening in a new tab */
+    user-select: none; /* Prevents selection */
+}
